@@ -59,9 +59,9 @@ u = response.json()
 
 if not u:
     print("Diagnosis not found")
-
-for i in u:
-    print(i["Issue"]["Name"])
+else:
+    for i in u:
+        print(i["Issue"]["Name"])
 
 
 
