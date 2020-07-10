@@ -57,6 +57,9 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 
 u = response.json()
 
+if not u:
+    print("Diagnosis not found")
+
 for i in u:
     print(i["Issue"]["Name"])
 
